@@ -1,3 +1,3 @@
-const database = {};
+var database = {};
 
 export default database;
