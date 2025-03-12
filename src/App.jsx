@@ -21,8 +21,8 @@ function App() {
 
   useEffect(() => {
     const get_events = async () => {
-      const response = await axios.get('http://localhost:8001/events/view')
-      setDatabase(response.data)
+      // const response = await axios.get('http://localhost:8001/events/view')
+      // setDatabase(response.data)
     }
     get_events()
   }, [])
@@ -94,23 +94,11 @@ function App() {
     var db = database;
     console.log(element);
     db = db.filter((e, index) => e !== element)
-    // const filteredEntry = filteredArray[editIndex];
-    // const updatedDB = db.map((element, index) => {
-    //   if (element.event_name == filteredEntry.event_name && element.day == filteredEntry.day && element.start_time == filteredEntry.start_time && element.end_time == filteredEntry.end_time) {
-    //     event_name = element.event_name;
-    //     day = element.day;
-    //     return event
-    //   }
-    //   else {
-    //     return element
-    //   }
-    // })
     const data = { event_name: element.event_name, day: element.day }
     // axios.post("http://localhost:8001/events/delete", data).catch((error) => {
     //   console.error("Error updating events:", error.message);
     // });
     setDatabase(db);
-    // seteditOpen(false);
   };
 
   function NextMonth() {
