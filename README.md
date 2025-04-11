@@ -1,12 +1,43 @@
-# React + Vite
+# 📅 Calendar App (React.js + Node.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple **Calendar App** built using **React.js** for the front-end and **Node.js** for the back-end. The app mimics a Google Calendar-like interface where users can:
 
-Currently, two official plugins are available:
+- View events in a calendar view
+- Create and delete events
+- Navigate between different days, weeks, and months
+- Event details (name, date, description) placeholders for UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features (UI Only)
 
-## Expanding the ESLint configuration
+### Front-End (React.js):
+- **Calendar View**: Display a calendar with days, weeks, and months.
+- **Event Creation**: A modal or form to simulate event creation (with details like event name, date, and description).
+- **Event List**: Display a list of events for the selected day.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Back-End (Node.js):
+- **Express.js API**: Handle routes for event creation, fetching events, and deleting events (currently with mock data).
+- **Mock Data**: Use hardcoded data or a mock database (e.g., JSON) for now.
+
+## 📁 Tech Stack
+
+### Front-End:
+- **React.js** (for UI)
+- **React Router** (for navigation)
+- **CSS** or **Styled Components** (for styling)
+- **Axios** (for API calls)
+
+### Back-End:
+- **Node.js** with **Express.js** (for handling API requests)
+
+## 💡 Purpose
+
+This project aims to create a simple calendar-like interface, providing a clean UI to display and manage events. The back-end can be further developed to integrate with databases like MongoDB or PostgreSQL.
+
+## 🌱 How to Run
+
+### Front-End Setup:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   cd client
+   npm install
